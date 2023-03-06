@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'idea'
+    id 'java-library'
+}
+
+group 'wegotoaw'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+//    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core
+//    implementation 'com.fasterxml.jackson.core:jackson-core:2.14.2'
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.14.2'
+    // https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api
+    implementation 'javax.xml.bind:jaxb-api:2.3.1'
+    // https://mvnrepository.com/artifact/net.sf.tinylaf/tinylaf
+    implementation 'net.sf.tinylaf:tinylaf:1.4.0'
+}
+
+test {
+    useJUnitPlatform()
+}
